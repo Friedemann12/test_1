@@ -1,0 +1,34 @@
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.router-link-exact-active {
+  border-bottom: white solid 5px;
+}
+
+@keyframes moveOutDown {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.menu_transition-leave-active {
+  animation: moveOutDown 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
