@@ -2,7 +2,7 @@
   <transition name="menu_transition">
     <div class="contact">
       <logo/>
-      <p>This is an contact page</p>
+      <p>This is a contact page</p>
       <navMenu/>
     </div>
   </transition>

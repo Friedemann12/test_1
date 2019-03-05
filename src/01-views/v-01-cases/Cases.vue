@@ -36,6 +36,9 @@ export default {
   },
   watch: {
     x: function() {
+      const sbtnL = document.getElementById("SbtnL").classList;
+      const sbtnR = document.getElementById("SbtnR").classList;
+
       let end =
         Object.keys(this.cases).length *
           document.getElementById("items").offsetWidth -
@@ -43,12 +46,12 @@ export default {
         4;
 
       if (scrollX <= 100) {
-        document.getElementById("SbtnL").classList.add("hide");
+        sbtnL.add("hide");
       } else if (scrollX >= end - 100 && scrollX <= end) {
-        document.getElementById("SbtnR").classList.add("hide");
+        sbtnR.add("hide");
       } else {
-        document.getElementById("SbtnL").classList.remove("hide");
-        document.getElementById("SbtnR").classList.remove("hide");
+        sbtnL.remove("hide");
+        sbtnR.remove("hide");
       }
     }
   }

@@ -18,22 +18,19 @@
     left: 0;
     background-color: white;
     visibility: hidden;
-    -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    transition: 0.3s ease-in-out 0s;
   }
   :hover:before {
     visibility: visible;
-    -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
   :hover {
     color: white;
   }
-  .MenuBtn {
-    letter-spacing: 1.2px;
-  }
+}
+.menu_is_shown {
+  letter-spacing: 1.2px;
 }
 
 .MenuOpen {
@@ -73,21 +70,44 @@
     background-color: #000000;
   }
 }
+
+@keyframes scaleIn {
+  0% {
+    transform-origin: center left;
+    transform: scaleX(0);
+  }
+  100% {
+    transform-origin: center left;
+    transform: scaleX(1);
+  }
+}
+@keyframes scaleOut {
+  0% {
+    transform-origin: center right;
+    transform: scaleX(1);
+  }
+  100% {
+    transform-origin: center right;
+    transform: scaleX(0);
+  }
+}
+
 .slideSide-enter-active {
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+  animation: scaleIn 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .slideSide-leave-active {
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+  animation: scaleOut 0.7s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.slideSide-enter-to,
-.slideSide-leave {
-  transform: scaleX(1);
-  opacity: 1;
+
+.menu_transition-leave-active {
+  animation: moveOutDown 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
-.slideSide-enter,
-.slideSide-leave-to {
-  transform: scaleX(0);
-  opacity: 0;
+
+@keyframes moveOutDown {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

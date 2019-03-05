@@ -6,6 +6,7 @@
   width: 50px;
   right: 40px;
   cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   &.hide {
     cursor: auto;
     opacity: 0.2;
@@ -22,6 +23,7 @@
   width: 50px;
   left: 40px;
   cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   &.hide {
     cursor: auto;
     opacity: 0.2;

@@ -3,12 +3,10 @@
     <div id="items" :style="{background: BI}">
       <div class="casetext">
         <h2 class="case">{{ headline }}</h2>
-        <transition name="slide">
+        <transition name="fade">
           <p class="hovertext" v-if="show">{{ text }}</p>
         </transition>
-        <transition name="Cslide">
-          <h3 class="brand">{{ brand }}</h3>
-        </transition>
+        <h3 class="brand">{{ brand }}</h3>
       </div>
     </div>
   </div>
