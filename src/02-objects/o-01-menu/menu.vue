@@ -2,8 +2,9 @@
   <transition name="menu_transition">
     <div>
       <div class="menu">
-        <span class="MenuBtn" @click="isOpen = !isOpen">{{ menuLabel }}</span>
+        <span @click="isOpen = !isOpen" :class="{'menu_is_shown' : !isOpen}">{{ menuLabel }}</span>
       </div>
+
       <div class="MenuOpen" :class="{'is-closed' : !isOpen}">
         <transition name="slideSide">
           <div class="CasesScreen" v-if="isOpen">

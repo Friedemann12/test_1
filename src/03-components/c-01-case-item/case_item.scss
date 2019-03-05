@@ -17,49 +17,49 @@
     text-align: left;
     color: white;
     max-height: 300px;
-    margin: 0;
-    transition: 1s;
     cursor: pointer;
     .case {
       font-size: 55px;
       font-weight: bolder;
-      padding-bottom: 20px;
     }
     .hovertext {
       font-size: 20px;
       font-weight: bold;
-      padding-bottom: 20px;
     }
     .brand {
+      padding-top: 20px;
       font-size: 20px;
     }
   }
 }
 
-.slide-enter-active {
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+.fade-enter-active {
+  transform-origin: center top;
+  animation: shrinkIn 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-.slide-leave-active {
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-}
-.slide-enter-to,
-.slide-leave {
-  max-height: 311px;
-  opacity: 1;
-}
-.slide-enter,
-.slide-leave-to {
-  max-height: 0;
-  opacity: 0;
+.fade-leave-active {
+  transform-origin: center top;
+  animation: shrinkOut 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.Cslide-enter-active {
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in;
+@keyframes shrinkOut {
+  0% {
+    transform: scaleY(1);
+    max-height: 100px;
+  }
+
+  100% {
+    transform: scaleY(0);
+    max-height: 0;
+  }
 }
-.Cslide-leave-active {
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in;
+@keyframes shrinkIn {
+  0% {
+    transform: scaleY(0);
+    max-height: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    max-height: 100px;
+  }
 }
