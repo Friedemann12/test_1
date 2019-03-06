@@ -19,16 +19,16 @@
     max-height: 300px;
     cursor: pointer;
     .case {
-      font-size: 55px;
+      font-size: 1.4rem;
       font-weight: bolder;
     }
     .hovertext {
-      font-size: 20px;
+      font-size: 0.6rem;
       font-weight: bold;
     }
     .brand {
       padding-top: 20px;
-      font-size: 20px;
+      font-size: 0.6rem;
     }
   }
 }
@@ -45,7 +45,7 @@
 @keyframes shrinkOut {
   0% {
     transform: scaleY(1);
-    max-height: 100px;
+    max-height: 10.5vh;
   }
 
   100% {
@@ -60,6 +60,6 @@
   }
   100% {
     transform: scaleY(1);
-    max-height: 100px;
+    max-height: 10.5vh;
   }
 }
