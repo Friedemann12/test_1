@@ -1,7 +1,14 @@
 .about {
+  font-size: 0px;
+  position: relative;
   background-color: aquamarine;
   height: 100vh;
-  p {
-    position: absolute;
+  width: 100vw;
+  .aboutText {
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    vertical-align: center;
   }
 }
