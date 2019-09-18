@@ -1,50 +1,50 @@
 {
     "case1": {
-        "headline": "Überschrift Case 1",
-        "text": "Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern.",
-        "brand": "Marke 1",
-        "backgroundImage": "url(https://www.buildinamsterdam.com/app/uploads/2018/06/123.jpg) no-repeat -850px center/cover"
+        "headline": "Headline Case 1",
+        "text": "This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.",
+        "brand": "Brand 1",
+        "backgroundImage": "url(https://images.unsplash.com/photo-1544164560-adac3045edb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=654&q=80) no-repeat 0px center/cover"
     },
     "case2": {
-        "headline": "Überschrift Case 2",
-        "text": "Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern.",
-        "brand": "Marke 2",
-        "backgroundImage": "url(https://www.buildinamsterdam.com/app/uploads/2018/04/Frans-HalsH-KoosBreukelCombi_Zoom-2200x0-c-default.jpg) no-repeat center center/cover"
+        "headline": "Headline Case 2",
+        "text": "This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.",
+        "brand": "Brand 2",
+        "backgroundImage": "url(https://images.unsplash.com/photo-1568714710066-95d38acf956e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) no-repeat 0px center/cover"
     },
     "case3": {
-        "headline": "Überschrift Case 3",
-        "text": "Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern.",
-        "brand": "Marke 3",
-        "backgroundImage": "url(https://www.buildinamsterdam.com/app/uploads/2016/06/tref-2200x0-c-default.jpg) no-repeat -600px center/cover"
+        "headline": "Headline Case 3",
+        "text": "This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.",
+        "brand": "Brand 3",
+        "backgroundImage": "url(https://images.unsplash.com/photo-1563076177-1bb11497d137?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) no-repeat 0px center/cover"
     },
     "case4": {
-        "headline": "Überschrift Case 4",
-        "text": "Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern.",
-        "brand": "Marke 4",
-        "backgroundImage": "url(https://www.buildinamsterdam.com/app/uploads/2018/12/Job-2200x0-c-default.jpg) no-repeat -100px center/cover"
+        "headline": "Headline Case 4",
+        "text": "This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.",
+        "brand": "Brand 4",
+        "backgroundImage": "url(https://images.unsplash.com/photo-1511954469482-c12d58a51aed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) no-repeat 0px center/cover"
     },
     "case5": {
-        "headline": "Überschrift Case 5",
-        "text": "Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern.",
-        "brand": "Marke 5",
-        "backgroundImage": "url(https://www.buildinamsterdam.com/app/uploads/2015/10/cfa-2200x0-c-default.jpg) no-repeat -100px center/cover"
+        "headline": "Headline Case 5",
+        "text": "This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.",
+        "brand": "Brand 5",
+        "backgroundImage": "url(https://images.unsplash.com/photo-1557221631-83d1a0149189?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) no-repeat 0px center/cover"
     },
     "case6": {
-        "headline": "Überschrift Case 6",
-        "text": "Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern.",
-        "brand": "Marke 6",
-        "backgroundImage": "url(https://www.buildinamsterdam.com/app/uploads/2015/10/protest-2200x0-c-default.jpg) no-repeat center center/cover"
+        "headline": "Headline Case 6",
+        "text": "This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.",
+        "brand": "Brand 6",
+        "backgroundImage": "url(https://images.unsplash.com/photo-1568786437496-19a4695093b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) no-repeat 0px center/cover"
     },
     "case7": {
-        "headline": "Überschrift Case 7",
-        "text": "Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern.",
-        "brand": "Marke 7",
-        "backgroundImage": "url(https://www.buildinamsterdam.com/app/uploads/2016/08/SBF_cover_1-2200x0-c-default.jpg) no-repeat -850px center/cover"
+        "headline": "Headline Case 7",
+        "text": "This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.",
+        "brand": "Brand 7",
+        "backgroundImage": "url(https://images.unsplash.com/photo-1568751302450-3d84e00f2348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) no-repeat 0px center/cover"
     },
     "case8": {
-        "headline": "Überschrift Case 8",
-        "text": "Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern. Dieser Text erscheint beim hovern.",
-        "brand": "Marke 8",
-        "backgroundImage": "url(https://www.buildinamsterdam.com/app/uploads/2017/03/MENDO_Collage_v2-2200x0-c-default.jpg) no-repeat center center/cover"
+        "headline": "Headline Case 8",
+        "text": "This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.This Text appears hovering over it.",
+        "brand": "Brand 8",
+        "backgroundImage": "url(https://images.unsplash.com/photo-1516907089318-f40b2d414772?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) no-repeat 0px center/cover"
     }
 }

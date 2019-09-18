@@ -49,6 +49,7 @@
   }
 
   p {
+    cursor: pointer;
     top: 50%;
     position: relative;
     left: 10%;
@@ -58,6 +59,7 @@
     height: 100vh;
     width: 33.3333vw;
     background-color: #222224;
+    border-bottom: white;
   }
   .ContactScreen {
     height: 100vh;
