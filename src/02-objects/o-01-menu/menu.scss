@@ -1,14 +1,67 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portait-only {
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-only {
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-only {
+  @media (min-width: 1200px) and (max-width: 1799px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
 .menu {
   color: white;
   text-decoration: none;
   position: fixed;
   top: 5%;
   right: 2%;
-  font-size: 30px;
+  font-size: 2rem;
+  @include for-phone-only {
+    font-size: 6.5vw;
+  }
   color: white;
   font-weight: bolder;
   cursor: pointer;
   z-index: 99;
+
   :before {
     content: "";
     position: absolute;
@@ -21,14 +74,17 @@
     transform: scaleX(0);
     transition: 0.3s ease-in-out 0s;
   }
+
   :hover:before {
     visibility: visible;
     transform: scaleX(1);
   }
+
   :hover {
     color: white;
   }
 }
+
 .menu_is_shown {
   letter-spacing: 1.2px;
 }
@@ -39,9 +95,12 @@
   width: 100%;
   height: 100%;
   display: flex;
+  @include for-phone-only {
+    flex-direction: column;
+  }
   justify-content: space-around;
   align-content: center;
-  font-size: 80px;
+  font-size: 5vw;
   overflow: hidden;
 
   &.is-closed {
@@ -55,17 +114,20 @@
     left: 10%;
     color: white;
   }
+
   .CasesScreen {
     height: 100vh;
     width: 33.3333vw;
     background-color: #222224;
     border-bottom: white;
   }
+
   .ContactScreen {
     height: 100vh;
     background-color: #171719;
     width: 33.3333vw;
   }
+
   .AboutScreen {
     height: 100vh;
     width: 33.3333vw;
@@ -83,6 +145,7 @@
     transform: scaleX(1);
   }
 }
+
 @keyframes scaleOut {
   0% {
     transform-origin: center right;
@@ -97,6 +160,7 @@
 .slideSide-enter-active {
   animation: scaleIn 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
 .slideSide-leave-active {
   animation: scaleOut 0.7s cubic-bezier(0.77, 0, 0.175, 1);
 }

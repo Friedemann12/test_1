@@ -1,3 +1,62 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portait-only {
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-only {
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-only {
+  @media (min-width: 1200px) and (max-width: 1799px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+@include for-phone-only {
+  #SbtnR {
+    display: none
+  }
+;
+  #SbtnL {
+    display: none
+  }
+}
+
 #SbtnR {
   background-color: hsla(0, 0, 0, 0.2);
   bottom: 40px;
@@ -7,14 +66,17 @@
   right: 40px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
   &.hide {
     cursor: auto;
     opacity: 0.2;
   }
 }
+
 #SbtnR:not(.hide):hover {
   background-color: hsla(0, 0, 0, 0.5);
 }
+
 #SbtnL {
   background-color: hsla(0, 0, 0, 0.2);
   bottom: 40px;
@@ -24,14 +86,17 @@
   left: 40px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
   &.hide {
     cursor: auto;
     opacity: 0.2;
   }
 }
+
 #SbtnL:not(.hide):hover {
   background-color: hsla(0, 0, 0, 0.5);
 }
+
 i {
   border: solid hsla(255, 255, 255, 0.8);
   border-width: 0 3px 3px 0;

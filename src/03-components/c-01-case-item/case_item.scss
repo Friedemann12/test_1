@@ -1,7 +1,80 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portait-only {
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-only {
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-only {
+  @media (min-width: 1200px) and (max-width: 1799px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
 .images {
   height: 100%;
   width: 31%;
-  display: inline-block;
+  @include for-big-desktop-up {
+    display: inline-block;
+    width: 31%;
+  }
+  @include for-desktop-only {
+    display: inline-block;
+    width: 31%;
+  }
+  @include for-tablet-portrait-up {
+    display: inline-block;
+    width: 60%;
+  }
+  @include for-desktop-up {
+    display: inline-block;
+    width: 31%;
+  }
+  @include for-tablet-landscape-only {
+    display: inline-block;
+    width: 31%;
+  }
+  @include for-phone-only {
+    flex-direction: row;
+    height: 90%;
+    width: 100%;
+  }
 
   #items {
     overflow: hidden;
@@ -18,17 +91,56 @@
     color: white;
     max-height: 300px;
     cursor: pointer;
+
     .case {
-      font-size: 55px;
+      font-size: 3.75rem;
       font-weight: bolder;
+      @include for-tablet-portrait-up {
+        font-size: 3.5vw;
+      }
     }
-    .hovertext {
-      font-size: 20px;
-      font-weight: bold;
+
+    @include for-big-desktop-up {
+      .hovertext {
+        font-size: 20px;
+        font-weight: bold;
+      }
     }
+    @include for-desktop-only {
+      .hovertext {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    @include for-tablet-portrait-up {
+      .hovertext {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    @include for-tablet-landscape-up {
+      .hovertext {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    @include for-desktop-up {
+      .hovertext {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    ;
+    }
+    @include for-tablet-landscape-only {
+      .hovertext {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
     .brand {
-      padding-top: 20px;
-      font-size: 20px;
+      padding-top: 3%;
+      font-size: 1.25rem;
     }
   }
 }
@@ -37,6 +149,7 @@
   transform-origin: center top;
   animation: shrinkIn 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
+
 .fade-leave-active {
   transform-origin: center top;
   animation: shrinkOut 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -53,6 +166,7 @@
     max-height: 0;
   }
 }
+
 @keyframes shrinkIn {
   0% {
     transform: scaleY(0);
